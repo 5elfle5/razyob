@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 const links = ['Upload', 'My songs', 'Profile'];
 interface NavLinkProps {
@@ -7,7 +6,7 @@ interface NavLinkProps {
   prepend: string;
 }
 
-function NavLink ({text, prepend} : NavLinkProps) {
+const NavLink = ({text, prepend} : NavLinkProps) => {
   return (
     <>
       {prepend}<span className="dim pointer"> {text} </span>
